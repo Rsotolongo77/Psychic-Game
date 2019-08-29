@@ -18,12 +18,15 @@ p {
 }
 
 img {
-    width: 500px;
+
+    margin-top: 60px;
 }
 
 .container-fluid {
 
     background-color: rgb(39, 37, 35);
+
+    height: 620px;
     
     width: 100%;
 }

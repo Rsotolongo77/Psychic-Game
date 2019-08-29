@@ -19,16 +19,16 @@
 <body>
 
     <div class="row">
-        <div class="col-2"></div>
+        <div class="col-2 md-8 sm-1"></div>
         <div class="col-8 text-center">
             <h1 class="display-4">Welcome to the Psychic Game!</h1>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2 md-8 sm-1"></div>
     </div>
 
     <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8 text-center">
+        <div class="col-2 md-8 sm-1"></div>
+        <div class="col-8 md-8 sm-1 text-center">
             <h2>Can you guess which letter Roborta is thinking of??</h2>
         </div>
         <div class="col-2"></div>
@@ -36,48 +36,61 @@
 
 
     <div class="row">
-        <div class="col-4"></div>
+        <div class="col-4 md-8 sm-1"></div>
         <div class="col-4 text-center">
             <h3 id="displayText"></h3>
         </div>
-        <div class="col-4"></div>
+        <div class="col-4 md-8 sm-1"></div>
     </div>
 
 
     <div class="container-fluid">
-        <div class="row">test</div>
+            
         
-            <div class="row">
-            <div class="col-3  text-right">
-                    <div class="row">test</div>
-                    <div class="row">test</div>
-                    <div class="row">test</div>
-                    <div class="row">test</div>
-                    <div class="row">test</div>
+
+        <div class="row">
+            <div class="col-3 md-8 sm-1 text-right">
+                <div class="row">test</div>
+                <div class="row">test</div>
+                <div class="row">test</div>
+                <div class="row">test</div>
+                <div class="row">test</div>
+
+
+
                 <p>Wins: <span id="wins"></span></p>
                 <p>Loses: <span id="loses"></span></p>
                 <p>Guesses Left: <span id="guessesLeft"></span></p>
                 <p>Guesses So far: <span id="guessSofar"></span></p>
-                
+
             </div>
-            <div class="col-6">
-                <img src="Assets/crystalBall.jpg" class="rounded-circle" height="75%" width="70%">
+            <div class="col-6 md-4 sm-1">
+                <img src="Assets/crystalBall.jpg" class="rounded-circle" height="75%" width="45%">
             </div>
+
+            <div class="col-3 md-8 sm-1"></div>
+
         </div>
 
+    </div>
+
+
+   
 
 
 
-    </div>  
+
+
+
 
 
     <footer class="page-footer font-small blue pt-4 text-white">
 
-            <div class="footer-copyright text-center py-3">© 2019 Copyright:
-    
-            </div>
-    
-    
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+
+        </div>
+
+
     </footer>
 
 
@@ -86,7 +99,7 @@
 
     <script>
 
-        
+
         var wins = 0;
         var loses = 0;
         var guessSofar = [];
@@ -95,7 +108,7 @@
         var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
         var displayText = "Type in a letter and see if you're part psychic";
         var guessesLeft = 9;
-        
+
 
         //function to display results
         function updateDisplay() {
@@ -104,7 +117,7 @@
             document.querySelector("#loses").innerHTML = loses;
             document.querySelector("#guessesLeft").innerHTML = guessesLeft;
             document.querySelector("#guessSofar").innerHTML = guessSofar;
-            
+
         };
 
         updateDisplay();
@@ -148,13 +161,13 @@
             if (userGuess === computerGuess) {
                 console.log("You won");
                 wins++;
-                
+
 
 
                 resetScores();
                 updateDisplay();
                 computerSelectRandomLetter();
-                
+
 
             }
 
