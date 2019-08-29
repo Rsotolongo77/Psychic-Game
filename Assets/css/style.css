@@ -20,13 +20,14 @@ p {
 img {
 
     margin-top: 60px;
+    margin-left: 90px;
 }
 
 .container-fluid {
 
     background-color: rgb(39, 37, 35);
 
-    height: 620px;
+    
     
     width: 100%;
 }
@@ -34,6 +35,5 @@ img {
 .rounded-circle {
 
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
