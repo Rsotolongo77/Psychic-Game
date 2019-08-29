@@ -48,7 +48,7 @@
         <div class="row">test</div>
         
             <div class="row">
-            <div class="col-3 text-right">
+            <div class="col-3 md-8  text-right">
                     <div class="row">test</div>
                     <div class="row">test</div>
                     <div class="row">test</div>
@@ -58,6 +58,7 @@
                 <p>Loses: <span id="loses"></span></p>
                 <p>Guesses Left: <span id="guessesLeft"></span></p>
                 <p>Guesses So far: <span id="guessSofar"></span></p>
+                <p>User guess: <span id ="pastGuess"></span</p>
             </div>
             <div class="col-6">
                 <img src="Assets/crystalBall.jpg" class="rounded-circle" height="75%" width="70%">
@@ -85,7 +86,7 @@
 
     <script>
 
-
+        
         var wins = 0;
         var loses = 0;
         var guessSofar = 0;
@@ -94,6 +95,7 @@
         var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
         var displayText = "Type in a letter and see if you're part psychic";
         var guessesLeft = 9;
+        
 
         //function to display results
         function updateDisplay() {
@@ -102,9 +104,11 @@
             document.querySelector("#loses").innerHTML = loses;
             document.querySelector("#guessesLeft").innerHTML = guessesLeft;
             document.querySelector("#guessSofar").innerHTML = guessSofar;
+            document.querySelector("#pastGuess").innerHTML = pastGuess;
         };
 
         updateDisplay()
+
 
 
         //function to generate random letter 
@@ -132,6 +136,7 @@
         document.onkeyup = function (event) {
 
             userGuess = event.key;
+
             console.log(userGuess)
 
 
@@ -143,7 +148,7 @@
             if (userGuess === computerGuess) {
                 console.log("You won");
                 wins++;
-                guessSofar++;
+                
 
 
 

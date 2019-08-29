@@ -17,12 +17,14 @@ p {
     font-size: xx-large;
 }
 
-
+img {
+    width: 500px;
+}
 
 .container-fluid {
 
     background-color: rgb(39, 37, 35);
-    height: 600px;
+    height: 620px;
     width: 100%;
 }
 
