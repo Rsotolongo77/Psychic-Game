@@ -58,7 +58,7 @@
                 <p>Loses: <span id="loses"></span></p>
                 <p>Guesses Left: <span id="guessesLeft"></span></p>
                 <p>Guesses So far: <span id="guessSofar"></span></p>
-                <p>User guess: <span id ="pastGuess"></span</p>
+                
             </div>
             <div class="col-6">
                 <img src="Assets/crystalBall.jpg" class="rounded-circle" height="75%" width="70%">
@@ -89,7 +89,7 @@
         
         var wins = 0;
         var loses = 0;
-        var guessSofar = 0;
+        var guessSofar = [];
         var computerGuess
         var userGuess
         var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -104,7 +104,7 @@
             document.querySelector("#loses").innerHTML = loses;
             document.querySelector("#guessesLeft").innerHTML = guessesLeft;
             document.querySelector("#guessSofar").innerHTML = guessSofar;
-            document.querySelector("#pastGuess").innerHTML = pastGuess;
+            
         };
 
         updateDisplay()
@@ -126,7 +126,7 @@
         function resetScores() {
 
             guessesLeft = 9;
-            guessSofar = 0;
+            guessSofar = [];
         };
 
 
@@ -162,7 +162,8 @@
             else if (userGuess !== computerGuess) {
                 console.log("You lost");
 
-                guessSofar++;
+                guessSofar.push(userGuess);
+                document.querySelector("#guessSofar").innerHTML = guessSofar;
                 guessesLeft--;
 
                 updateDisplay()
