@@ -5,7 +5,8 @@
 ## Technologies used:
 1. HTML
 2. Bootstrap 
-3. Javascript
+3. CSS
+4. Javascript
 
 ## How the app works:
 ### The program selects a random left. The user is then allowed 9 chances to guess the letter chosen by the program. If the user chooses correctly they are given a "win", otherwise they are given a "loss".
