@@ -4,7 +4,7 @@
 
 ## Technologies used:
 1. HTML
-2. CSS 
+2. Bootstrap 
 3. Javascript
 
 ## How the app works:
