@@ -12,4 +12,4 @@
 
 ### You can visit site at https://rsotolongo77.github.io/Psychic-Game/
 
-![ ](Psychic-Game/Assets/Images/pic1.png)
+![ ](PsychicGame/Assets/Images/pic1.png)
