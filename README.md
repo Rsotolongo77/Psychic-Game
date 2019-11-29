@@ -9,7 +9,7 @@
 4. Javascript
 
 ## How the app works:
-### The program selects a random left. The user is then allowed 9 chances to guess the letter chosen by the program. If the user chooses correctly they are given a "win", otherwise they are given a "loss".
+### The program selects a random letter. The user is then allowed 9 chances to guess the letter chosen by the program. If the user chooses correctly they are given a "win", otherwise they are given a "loss".
 
 ### You can visit site at https://rsotolongo77.github.io/Psychic-Game/
 
