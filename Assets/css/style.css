@@ -21,10 +21,14 @@ p {
 
 }
 
+#stats {
+    margin-top: 10rem;
+}
+
 img {
 
-    margin-top: 60px;
-    margin-left: 110px;
+    margin-top: 2rem;
+    margin-left: 10rem;
 }
 
 .container-fluid {
